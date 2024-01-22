@@ -2,7 +2,7 @@ package org.example;
 
 public class MyHashMap<K, V> implements MethodsMap {
     private final float LOAD_FACTOR = 0.75f;
-    private int capacity = 16;
+    private int capacity = 1;
     private Entry<K, V>[] table;
 
     static class Entry<K, V> {
