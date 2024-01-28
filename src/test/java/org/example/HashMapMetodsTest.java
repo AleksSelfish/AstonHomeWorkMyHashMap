@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-public class UserTest {
+public class HashMapMetodsTest {
     @Test
     void сheckSizeMapTest(){
         MyHashMap<String,Integer> array = new MyHashMap<>();
