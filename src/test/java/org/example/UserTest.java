@@ -15,17 +15,24 @@ public class UserTest {
 @Test
     void сheckRemoveFromHashMapTest(){
         MyHashMap<String,Integer> array = new MyHashMap<>();
-        array.put("1",1);
-        array.remove("1");
+    for (int i = 0; i < 100_000; i++) {
+        array.put(i,i);
+
+    }
+    for (int i = 0; i < 100_000; i++) {
+        array.remove(i);
+
+    }
         Assertions.assertEquals(0,array.size());
     }
 
     @Test
     void сheckPutInHashMapKeyValueTest(){
         MyHashMap<String,Integer> array = new MyHashMap<>();
-        array.put("1",1);
-        array.put("2",2);
-        Assertions.assertEquals(2,array.size());
+        for (int i = 0; i < 100_000; i++) {
+            array.put(i,i);
+        }
+        Assertions.assertEquals(100_000,array.size());
     }
     @Test
     void checkGetKeyFromHashMapTest(){

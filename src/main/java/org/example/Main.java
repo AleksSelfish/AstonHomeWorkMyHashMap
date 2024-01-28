@@ -10,6 +10,5 @@ class Mian{
         array.put("3",1);
         array.put("4",1);
         System.out.println(array.size());
-
     }
 }
